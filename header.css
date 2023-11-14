@@ -1,0 +1,147 @@
+.header {
+  display: flex;
+  height: 55px;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(190, 188, 188);
+  z-index: 100;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 70px;
+  width: 155px;
+}
+
+.hamburger {
+  width: 30px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.yt-icon {
+  width: 80px
+}
+
+.middle-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 35px;
+  flex: 1;
+  max-width: 500px;
+}
+
+.search-bar {
+  flex: 1;
+  height: 36px;
+  font-size: 16px;
+  border-width: 1px;
+  border-color: rgb(195, 189, 189);
+  border-style: solid;
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  width: 0;
+
+}
+
+.search-bar::placeholder {
+  font-family: Roboto, arial;
+  font-size: 15px;
+  padding-left: 12px;
+}
+
+.search-button {
+  height: 38px;
+  width: 50px;
+  background: rgb(247, 247, 247);
+  border-color: rgb(195, 189, 189);
+  border-width: 1px;
+  border-style: solid;
+  margin-left: -1px;
+  margin-right: 8px;
+
+}
+
+.search-button,
+.mic-button,
+.create-button,
+.notify-button,
+.profile-button {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-button .tooltip,
+.mic-button .tooltip,
+.create-button .tooltip,
+.notify-button .tooltip,
+.profile-button .tooltip {
+  position: absolute;
+  background: lightgray;
+  padding: 4px 5px;
+  border-radius: 2px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.mic-button:hover .tooltip,
+.create-button:hover .tooltip,
+.notify-button:hover .tooltip,
+.profile-button:hover .tooltip {
+  opacity: 1;
+}
+
+.mic-button {
+  height: 38px;
+  width: 38px;
+  border-radius: 19px;
+  background: rgb(247, 247, 247);
+  border: none;
+}
+
+.yt-button-img {
+  height: 18px;
+  width: 18px;
+  object-fit: cover;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 200px;
+  margin-right: 24px;
+  flex-shrink: 0;
+}
+
+.create {
+  width: 30px;
+}
+
+.bell {
+  width: 30px;
+}
+
+.profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
